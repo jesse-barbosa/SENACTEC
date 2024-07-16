@@ -1,0 +1,21 @@
+.bg-purple {
+    background-color: #af13af !important;
+    text-align: center;
+}
+
+.text-purple {
+    color: purple !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.bg-custom {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(254, 49, 84) !important;
+    transition: all 0.2s;
+}
+.bg-custom:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: aquamarine;
+}

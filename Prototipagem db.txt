@@ -1,0 +1,89 @@
+Banco de dados: dbsenactecjessebarbosa
+--------------------------------------------------------
+Nome da Tabela: tbaluno
+Nome do campo	Tipo(tamanho)
+
+codAluno	int(4) AI K.Primary
+nomeAluno	varchar(100)
+dataAluno	date
+projetoAluno	char(200)
+destaqueAluno	boolean
+cursoAluno	varchar(100)
+descProjAluno	varchar(200)
+
+--------------------------------------------------------
+Nome da Tabela: tbbanner
+Nome do Campo	Tipo(tamanho)
+
+codBanner	int(11) AI K.Primary
+nomeBanner	char(20)
+urlImgBanner	char(100)
+tamanhoBanner	char(9)
+linkBanner	char(100)
+situacaoBanner 	char(10) valor padrão: ATIVO
+destaqueBanner	boolean(1)
+
+--------------------------------------------------------
+Nome da Tabela: tbnewsletter
+Nome do Campo	Tipo(tamanho)
+
+codNewsLetter		int(11) AI K.Primary
+emailNewsLetter		char(70) 
+situacaoNewsLetter	char(10) valor padrão: ATIVO
+--------------------------------------------------------
+Nome da Tabela: tbmensagem
+Nome do Campo		Tipo(tamanho)
+
+codMensagem		int(11)	AI K.Primary
+textoMensagem		char(255)
+autorMensagem		char(20)
+fonteMensagem		char(20)
+situacaoMensagem	char(10) valor padrão: ATIVO
+--------------------------------------------------------
+Nome da tabela: tbcurso
+Nome do Campo		Tipo(tamanho)
+
+codCurso		int(11) AI K.Primary
+nomeCurso		char(50)
+descCurso		text
+linkCurso		char(100)
+urlImgCurso		char(100)
+situacaoCurso		char(10) valor padrão: ATIVO
+--------------------------------------------------------
+Nome da tabela: tbprojeto
+Nome do Campo		Tipo(tamanho)
+
+codProjeto		int(11) AI K.Primary
+nomeProjeto		char(30)
+descProjeto		char(30)
+linkProjeto		char(100)
+urlImgProjeto		char(100)
+situacaoProjeto		char(10) valor padrão: ATIVO
+--------------------------------------------------------
+Nome da tabela: tbmidiasocial
+Nome do campo		Tipo(tamanho)
+
+codMidiaSocial		int(11) AI K.Primary
+nomeMidiaSocial		char(10)
+linkMidiaSocial		char(100)
+situacaoMidiaSocial	char(10) valor padrão: ATIVO
+
+--------------------------------------------------------
+Nome da tabela: tbcolaborador
+Nome do campo		Tipo(tamanho)
+
+codColaborador		int(11) AI K.primary
+nomeColaborador		char(70)
+descColaborador		text
+linkColaborador		char(100)
+urlImgColaborador	char(100)
+situacaoColaborador	char(10) valor padrão: ATIVO
+--------------------------------------------------------
+Nome da tabela: tbcontato
+Nome do Campo		Tipo(tamanho)
+
+codContato		int(11) AI K.Primary
+nomeContato		char(20)
+emailContato		char(70)
+assuntoContato		char(15)
+mensagemContato		text
