@@ -2,14 +2,20 @@
 class MostrarUrl {
     public function trocarUrl($url)
     {
+        $baseDir = __DIR__ . '/../pagina/';
         if(empty($url)) {
-            $url = "../senactec/paginas/home.php";
+            $filePath = $baseDir . 'home.php';
         }
         else {
-            $url = "../senactec/paginas/$url.php";
+            $filePath = $baseDir . $url . '.php';
         }
-        include_once ($url);
+
+
+        if (file_exists($filePath)) {
+            include_once($filePath);
+        } else {
+            echo "Erro: Arquivo não encontrado.";
+        }
     }
 }
-
 ?>

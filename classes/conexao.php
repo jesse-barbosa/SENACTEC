@@ -7,7 +7,7 @@ class Conexao {
         $this->servidor = "localhost";
         $this->usuario = "root";
         $this->senha = "";
-        $this->banco = "senactec";
+        $this->banco = "dbsenactecjessebarbosa";
         self::conectarBanco();
     }
     public function conectarBanco() {
